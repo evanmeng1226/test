@@ -21,7 +21,7 @@ export default () => {
                 <meta name="description" content="abcdefg"></meta>
             </Helmet>
 
-            <div>{message.message}</div>
+            <div>{message}</div>
             <button onClick={() => {
                 setMessage("AAAAAAAAAAAAAAAAAA");
             }}>Click</button>
