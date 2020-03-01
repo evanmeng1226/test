@@ -4,12 +4,12 @@ import { Helmet } from 'react-helmet';
 
 export default () => {
 
-    const [message, setMessage] = useState({});
+    const [message, setMessage] = useState("");
 
     useEffect(() => {
         const fetchData = async () => {
             await new Promise((resolve) => setTimeout(resolve, 3000));
-            setMessage({ message: "abc" });
+            setMessage("abc");
         }
         fetchData();
     }, []);
@@ -23,7 +23,7 @@ export default () => {
 
             <div>{message.message}</div>
             <button onClick={() => {
-                setMessage("AAAAAAAAAAAAAAAAAa");
+                setMessage("AAAAAAAAAAAAAAAAAA");
             }}>Click</button>
             <Link to="/about">About</Link>
         </div>
